@@ -12,10 +12,15 @@ This is a working space for me to build out, and get feedback on a possible addi
 * **TODO:** [Standard Attack Patterns](http://capec.mitre.org/about/glossary.html#Standard_Attack_Pattern)
 * **TODO:** [Detailed Attack Pattern](http://capec.mitre.org/about/glossary.html#Detailed_Attack_Pattern)
 * **TODO:** Indicators/Warnings of Attack
+
 This element represents a container of one or more indicator warning of attack. Indicator warning of attack describes activities, events, conditions or behaviors that may indicate that an attack of this type is imminent, in progress or has occurred.
+
 * **TODO:** Relationships (with other attack patterns e.g. Interception)
+
 The Relationships structure contains one or more Relationship elements, each of which identifies an association between this structure, whether it is an Attack Pattern, Category, or Compound_Element and another structure.
+
 * **TODO:** Examples-Instances
+
 This element represents a container of one or more example instances. An example instance details an explanatory example or demonstrative exploit instance of this attack, USAGE: This element is used to to help the reader understand the nature, context and variability of the attack in more practical and concrete terms.
 
 ### Primary Community Tasks
