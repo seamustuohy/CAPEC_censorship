@@ -9,7 +9,7 @@ Meta Attack Pattern
 "Disruption of system operations by blocking communication of user data or control information." [1]
 
 * Reference
-  * [1] [Obstruction; Sub-Def: Interference - Internet Security Glossary, Version 2](https://tools.ietf.org/html/rfc4949#page-204)
+* [1] [Obstruction; Sub-Def: Interference - Internet Security Glossary, Version 2](https://tools.ietf.org/html/rfc4949#page-204)
 
 ### Jamming
 Attack Pattern
@@ -183,7 +183,6 @@ Attack Pattern
 
 ## Communications Tampering & Termination
 Meta Attack Pattern
-
 ### Route Tampering & Termination
 Attack Pattern
 
@@ -218,8 +217,9 @@ When an otherwise legitimate DNS server provides malicious ("NXDOMAIN" ("No such
   * include "hosts file"/IP address in your app
   * Use a .onion domain with Tor support
 
-##### Below-Recursive DNS Poisoning
-Detailed Attack Pattern
+* Methods of Attack
+
+  * Below-Recursive DNS Poisoning
 
 When an otherwise legitimate recursive DNS server provides malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) DNS responses to requests made of it.
 
@@ -227,20 +227,17 @@ When done through a legitimate recursive DNS server I would consider this redire
 
 "DNS blocking that’s done by an ISP or enterprise in order to censor content or protect end users or to insert ads into the web experience occurs between the end user’s laptop or desktop or mobile device and whatever recursive DNS server that end user is depending on. Your recursive DNS server as you read this article was most likely assigned to you by DHCP along with your IP address unless you’ve taken explicit steps to override this setting and it’s possible for the operator of your network to prevent you from successfully overriding it – which they will do if your override is costing them revenue or if their government insists." [1]
 
-* References
+    * References
+      * [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
 
-- [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
-
-##### Above-Recursive DNS Poisoning
-Detailed Attack Pattern
+  * Above-Recursive DNS Poisoning
 
 When an otherwise legitimate authority DNS server provides malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) responses to requests made of it.
 
 "DNS blocking that’s done by an authority server operator ... One could imagine a country that ... demands that all recursive name server operators in the country use a specific “alternate root” name server system whose design and configuration included various kinds of censorship and overrides." [1]
 
-* References
-
-- [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
+    * References
+      * [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
 
 
 ### Protocol Tampering & Termination
@@ -282,24 +279,23 @@ Censorship](https://www.usenix.org/system/files/conference/foci14/foci14-anonymo
   * include "hosts file"/IP address in your app
   * Use a .onion domain with Tor support
 
-##### Below-Recursive DNS Poisoning
+* Methods of attack
+  * Below-Recursive DNS Poisoning
 Detailed Attack Pattern
 
 When an On/In-path device between a recursive DNS server and a user sends a malicious ("NXDOMAIN" ("No such domain") code, or DNS A record ) response before a legitimate resolver can.
 
 "DNS blocking that’s done by an ISP or enterprise in order to censor content or protect end users or to insert ads into the web experience occurs between the end user’s laptop or desktop or mobile device and whatever recursive DNS server that end user is depending on." [1]
 
-* References
+    * References
+      * [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
 
-- [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
-
-##### Above-Recursive DNS Poisoning
+  * Above-Recursive DNS Poisoning
 Detailed Attack Pattern
 
 When an On/In-path device between a recursive DNS server and a user sends a malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) response before a legitimate resolver can.
 
 "DNS blocking that’s done ... by a government using deliberate DNS poisoning will happen in between an authority server and a recursive server. One could imagine a country that rewrites DNS transactions at its international borders, or that injects false IP routes for well known authority name servers thus taking over their role, ..." [1]
 
-* References
-
-- [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
+    * References
+      *  [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
