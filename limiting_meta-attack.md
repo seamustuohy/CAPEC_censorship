@@ -1,4 +1,5 @@
-## Limiting
+# Limiting#
+
 Meta Attack Pattern
 
 * References
@@ -6,7 +7,8 @@ Meta Attack Pattern
 * Methods of attack
 * Mitigations
 
-### Throttling
+## Throttling##
+
 Attack Pattern
 
 * Mitigations
@@ -17,7 +19,8 @@ Attack Pattern
   * Add resumeable up/downloads
   * Implement async http libraries like OkHTTP and Volley
 
-### Time Delimited Access
+## Time Delimited Access##
+
 Attack Pattern
 
 * References

@@ -1,4 +1,5 @@
-## Tampering & Termination
+# Tampering & Termination#
+
 Meta Attack Pattern
 
 * References
@@ -7,7 +8,8 @@ Meta Attack Pattern
 * Mitigations
 
 
-### Route Tampering & Termination
+## Route Tampering & Termination##
+
 Attack Pattern
 
 * References
@@ -16,7 +18,8 @@ Attack Pattern
 * Mitigations
 
 
-#### BGP Tampering
+### BGP Tampering###
+
 Detailed Attack Pattern
 https://queue.acm.org/detail.cfm?id=2668966
 
@@ -29,7 +32,8 @@ https://queue.acm.org/detail.cfm?id=2668966
   * BGP Router
 
 
-##### BGP Prefix hijacking
+#### BGP Prefix hijacking####
+
 Detailed Attack Pattern
 
 "In a prefix hijack, the hijacking AS originates the exact same prefix as the AS(es) that is legitimately allocated the victim IP prefix. The bogus BGP announcement originated by the hijacking AS will be disseminated throughout the routing system, and the other ASes will use their local policies to choose between routes to the legitimate origin AS(es) and bogus routes originated by the hijacking AS." [1]
@@ -40,7 +44,8 @@ Detailed Attack Pattern
 * Resources Required
   * BGP Router
 
-##### BGP Subprefix hijacking
+#### BGP Subprefix hijacking####
+
 Detailed Attack Pattern
 
 "In a subprefix hijack, the hijacking AS originates a subprefix of the victim’s IP prefix—that is, a prefix that is covered by the victim IP prefix."
@@ -52,7 +57,8 @@ Detailed Attack Pattern
 * Resources Required
   * BGP Router
 
-##### BGP Route Leaks
+#### BGP Route Leaks####
+
 Detailed Attack Pattern
 
 "... the perpetrator announces a legitimate route that it is actually using, but announces it to too many of its neighbors. The perpetrator is then overwhelmed by a flood of traffic from neighbors that select the leaked route." [1]
@@ -69,7 +75,8 @@ Detailed Attack Pattern
   * BGP Router
 
 
-##### BGP Route Disruption
+#### BGP Route Disruption####
+
 Detailed Attack Pattern
 
 "Disabling the routing process on critical routers or suppressing BGP information transmission can effectively render large parts of a network unreachable." [2]
@@ -84,7 +91,8 @@ Detailed Attack Pattern
 Observables:  "Disabling a network’s connectivity to the Internet through BGP routing disruption is easily detectable, since it entails changes in the global routing state of the network, i.e., in the control plane. Previously advertised prefixes must be withdrawn or re-advertised with different properties in order to change global routing behavior." - [2]
 
 
-#### DNS Poisoning
+### DNS Poisoning###
+
 Detailed Attack Pattern
 
 When an otherwise legitimate DNS server provides malicious ("NXDOMAIN" ("No such domain") code, or ip address for a block-page) DNS responses to requests made of it.
@@ -122,7 +130,8 @@ When an otherwise legitimate authority DNS server provides malicious ("NXDOMAIN"
       * [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
 
 
-### Protocol Tampering & Termination
+## Protocol Tampering & Termination##
+
 Attack Pattern
 
 * Method of Attack
@@ -141,7 +150,8 @@ Attack Pattern
   * [Inferring Mechanics of Web Censorship Around the World](https://www.usenix.org/system/files/conference/foci12/foci12-final1.pdf)
 
 
-#### Connection Reset
+### Connection Reset###
+
 Detailed Attack Pattern
 
 * References
@@ -150,7 +160,8 @@ Detailed Attack Pattern
 * Mitigations
 
 
-##### TCP RST Injection
+#### TCP RST Injection####
+
 Detailed Attack Pattern
 
 When a client makes a HTTP GET request they are sent one or more spoofed TCP RST packets. This causes the client to terminate the TCP connection.
@@ -167,7 +178,8 @@ When a client makes a HTTP GET request they are sent one or more spoofed TCP RST
 * Mitigations
   *
 
-#### DNS Injection
+### DNS Injection###
+
 Detailed Attack Pattern
 
 When an On/In-path device sends a malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) responses before a legitimate resolver can, or in combination with DNS Filtering.

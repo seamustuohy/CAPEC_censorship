@@ -1,4 +1,5 @@
-## Interference
+# Interference#
+
 Meta Attack Pattern
 
 "Disruption of system operations by blocking communication of user data or control information." [1]
@@ -11,7 +12,8 @@ Meta Attack Pattern
 * Mitigations
 
 
-### Jamming
+## Jamming##
+
 Attack Pattern
 
 "An attack that attempts to interfere with the reception of broadcast communications." [1]
@@ -26,7 +28,8 @@ Attack Pattern
 * Methods of attack
 
 
-##### Satellite Jamming
+#### Satellite Jamming####
+
 Detailed Attack Pattern
 
 * References
@@ -34,7 +37,8 @@ Detailed Attack Pattern
 * Methods of attack
 * Mitigations
 
-##### Cellular Jamming
+#### Cellular Jamming####
+
 Detailed Attack Pattern
 
 * References
@@ -43,7 +47,8 @@ Detailed Attack Pattern
 * Mitigations
 
 
-##### Wi-Fi Jamming
+#### Wi-Fi Jamming####
+
 Detailed Attack Pattern
 
 * References
@@ -51,7 +56,8 @@ Detailed Attack Pattern
 * Methods of attack
 * Mitigations
 
-### Disabling Network Hardware
+## Disabling Network Hardware##
+
 Attack Pattern
 
 "Disabling Internet access is an extreme form of Internet censor- ship in which a population’s Internet access is blocked completely, a coarse but technically more straightforward approach than the selective blocking used in most Internet censorship regimes. It can be implemented by simply powering down or physically disconnecting critical equipment, although this approach typically requires physical co-location with the communications equipment, which may be spread over a wide area"
@@ -65,7 +71,8 @@ Censorship](http://www.caida.org/publications/papers/2011/outages_censorship/out
 * Mitigations
 
 
-### Routing Information Filtering
+## Routing Information Filtering##
+
 Attack Pattern
 
 * References
@@ -73,7 +80,8 @@ Attack Pattern
 * Methods of attack
 * Mitigations
 
-#### DNS Domain Removal
+### DNS Domain Removal###
+
 Detailed Attack Pattern
 
 *Is this worth including? It requires the adversary to actually have the root name server remove the domain against a services will.*
@@ -84,7 +92,8 @@ Detailed Attack Pattern
 * Mitigations
 
 
-#### BGP Routing Disruption
+### BGP Routing Disruption###
+
 Detailed Attack Pattern
 
 "Disabling the routing process on critical routers or suppressing BGP information transmission can
@@ -98,7 +107,8 @@ Censorship](http://www.caida.org/publications/papers/2011/outages_censorship/out
 * Methods of attack
 * Mitigations
 
-#### DNS Filtering
+### DNS Filtering###
+
 Detailed Attack Pattern
 
 When DNS requests for a specific domain are dropped by an in-path server.
@@ -118,7 +128,8 @@ When DNS requests for a specific domain are dropped by an in-path server.
 * Resources Required
 * Methods of attack
 
-### Data Filtering
+## Data Filtering##
+
 Attack Pattern
 
 When a specific type of data is dropped by an in-path server. When requests are filtered the corresponding connections time out.
@@ -140,7 +151,8 @@ When a specific type of data is dropped by an in-path server. When requests are 
 * References
   * [1] [Inferring Mechanics of Web Censorship Around the World](https://www.usenix.org/system/files/conference/foci12/foci12-final1.pdf)
 
-#### IP Address Filtering
+### IP Address Filtering###
+
 Detailed Attack Pattern
 
 Dropping packets because of they are destined for a given IP address.
@@ -160,7 +172,8 @@ The use of an access control list (ACL)
   * [Censorship in the Wild: Analyzing Internet Filtering in Syria](http://conferences2.sigcomm.org/imc/2014/papers/p285.pdf)
 
 
-#### Port/Protocol Based Filtering
+### Port/Protocol Based Filtering###
+
 Detailed Attack Pattern
 
 Dropping packets because they are destined for a specific port and protocol combination.
@@ -174,7 +187,8 @@ Dropping packets because they are destined for a specific port and protocol comb
   * Use well-known ports for high-use protocols like 80/tcp, 443/tcp, 993/tcp
   * Implement Pluggable Transport support
 
-#### URL Based Filtering
+### URL Based Filtering###
+
 Detailed Attack Pattern
 
 Filtering based upon the requested domain, subdomain, or host.
@@ -184,7 +198,8 @@ Filtering based upon the requested domain, subdomain, or host.
 * Methods of attack
 * Mitigations
 
-##### Full URL Based Filtering
+#### Full URL Based Filtering####
+
 Detailed Attack Pattern
 
 Filtering based upon the requested URL.
@@ -195,7 +210,8 @@ Filtering based upon the requested URL.
 * Mitigations
 
 
-##### URL String-based Filtering
+#### URL String-based Filtering####
+
 Detailed Attack Pattern
 
 Filtering based upon the use of particular strings included in the requested URL.
@@ -211,7 +227,8 @@ Filtering based upon the use of particular strings included in the requested URL
   * don't encode meaningful data in URLs
 
 
-#### Content Filtering
+### Content Filtering###
+
 Detailed Attack Pattern
 
 * References
@@ -225,7 +242,8 @@ Detailed Attack Pattern
   * Implement trickle-syncing
   * Implement self-throttling to avoid detection of larger downloads
 
-#### Protocol Filtering
+### Protocol Filtering###
+
 Detailed Attack Pattern
 
 Filtering specific protocols.
@@ -242,7 +260,8 @@ Filtering specific protocols.
   * Implement Domain Fronting
   * Implement Pluggable Transport support
 
-#### Service/Application Blocking
+### Service/Application Blocking###
+
 Detailed Attack Pattern
 
 Filtering specific protocols.
