@@ -3,6 +3,9 @@
 This is a working space for me to build out, and get feedback on a possible addition of an "Obstruction" category for [CAPEC](http://capec.mitre.org/index.html)
 
 
+[**Click here to explore the current draft structure of the Obstruction category.**](category.md)
+
+
 ## Tasks
 
 ### Primary Content Creation Tasks
@@ -40,10 +43,6 @@ The censorship detection & measurement community, the CAPEC community, and censo
 * **TODO:** Target Attack Surface
 * **TODO:** Resources Required
 * **TODO:** (Non)Recommended Design/Security Patterns
-
-
-
-
 
 
 
