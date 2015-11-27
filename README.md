@@ -2,18 +2,50 @@
 
 This is a working space for me to build out, and get feedback on a possible addition of an "Obstruction" category for [CAPEC](http://capec.mitre.org/index.html)
 
+## Current Draft Structure
 
-[**Click here to explore the current draft structure of the Obstruction category.**](category.md)
+### CATEGORY: Manipulate Resources (262)
+607 - Obstruction
+      601 - Jamming
+              604 - WiFi Jamming
+              605 - Cellular Jamming
+              XXX - Satellite Jamming
+      XXX - Limiting
+              XXX - Throttling
+              XXX - Time Delimited Access
+      XXX - Data Filtering
+              XXX - IP Address Filtering
+              XXX - URL Based Filtering
+              XXX - Content Filtering
+              XXX - Protocol Filtering
+              XXX - Service/Application Blocking
 
+161 - Infrastructure Manipulation
+      XXX - Route Manipulation
+              XXX - BGP Tampering
+              XXX - BGP Route Leaks
+              142 - DNS Cache Poisoning
+      XXX - Route Disruption
+              XXX - Disabling Network Hardware
+              XXX - DNS Domain Removal
+              XXX - DNS Filtering
+              XXX - BGP Route Disruption
+
+### CATEGORY: Injection (152)
+XXX - Traffic Injection
+      XXX - Connection Reset
+            XXX - TCP RST Injection
+      XXX - Route Injection
+            XXX - DNS Injection
 
 ## Tasks
 
 ### Primary Content Creation Tasks
 
-* **TODO:** [Category](http://capec.mitre.org/about/glossary.html#Category)
-* **TODO:** [Meta Attack Patterns](http://capec.mitre.org/about/glossary.html#Meta_Attack_Pattern)
-* **TODO:** [Standard Attack Patterns](http://capec.mitre.org/about/glossary.html#Standard_Attack_Pattern)
-* **TODO:** [Detailed Attack Pattern](http://capec.mitre.org/about/glossary.html#Detailed_Attack_Pattern)
+* **DONE:** [Category](http://capec.mitre.org/about/glossary.html#Category)
+* **DONE:** [Meta Attack Patterns](http://capec.mitre.org/about/glossary.html#Meta_Attack_Pattern)
+* **DONE:** [Standard Attack Patterns](http://capec.mitre.org/about/glossary.html#Standard_Attack_Pattern)
+* **DONE:** [Detailed Attack Pattern](http://capec.mitre.org/about/glossary.html#Detailed_Attack_Pattern)
 * **TODO:** Indicators/Warnings of Attack
 
 This element represents a container of one or more indicator warning of attack. Indicator warning of attack describes activities, events, conditions or behaviors that may indicate that an attack of this type is imminent, in progress or has occurred.
@@ -43,15 +75,3 @@ The censorship detection & measurement community, the CAPEC community, and censo
 * **TODO:** Target Attack Surface
 * **TODO:** Resources Required
 * **TODO:** (Non)Recommended Design/Security Patterns
-
-
-
-## Notes on scoping from the CAPEC Discussion List
-
-"Obstruction methods are well within scope for CAPEC. Their lack of inclusion is unfortunately due solely to a lack of submission / priority given to other areas. We would love to see obstruction methods added.
-
-I could see a new category titled "Obstruct Interactions"   added to the [Mechanisms of Attack](http://capec.mitre.org/data/definitions/1000.html) view. Under this I could see a meta level pattern titled "Jamming".  What other meta level patterns would there be? Standard and detailed patterns would then want to be developed.
-
-Note that "Flooding" already existing (CAPEC-125) and is used to describe a technique for depleting resources on a system by forcing it to engage in a large number of interactions. Is there a different pattern that might be related to obstruction about filling a communications channel with so much traffic that legitimate comms can't get through?
-
-We would love help developing this area of CAPEC and can update the list with these new patterns if they are developed and submitted."
