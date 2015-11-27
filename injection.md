@@ -1,9 +1,9 @@
-### CATEGORY: Injection (152)
-XXX - Traffic Injection
-      XXX - Connection Reset
-            XXX - TCP RST Injection
-      XXX - Route Injection
-            XXX - DNS Injection
+### [CATEGORY: Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md)A (152)
+- XXX - [Traffic Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#traffic-injection)
+  - XXX - [Connection Reset](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#connection-reset)
+    - XXX - [TCP RST Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#tcp-rst-injection)
+  - XXX - [Route Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#route-injection)
+    - XXX - [DNS Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#dns-injection)
 
 # Traffic Injection
 

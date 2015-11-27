@@ -1,35 +1,35 @@
-### CATEGORY: Manipulate Resources (262)
-607 - Obstruction
-      601 - Jamming
-              604 - WiFi Jamming
-              605 - Cellular Jamming
-              XXX - Satellite Jamming
-      XXX - Limiting
-              XXX - Throttling
-              XXX - Time Delimited Access
-      XXX - Data Filtering
-              XXX - IP Address Filtering
-              XXX - URL Based Filtering
-              XXX - Content Filtering
-              XXX - Protocol Filtering
-              XXX - Service/Application Blocking
+## CATEGORY: [Manipulate Resources](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md) (262)
+- 607 - [Obstruction](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#obstruction-601)
+  - 601 - [Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#jamming-601)
+    - 604 - [WiFi Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#wi-fi-jamming-604)
+    - 605 - [Cellular Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#cellular-jamming-605)
+    - XXX - [Satellite Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#satellite-jamming)
+  - XXX - [Limiting](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
+    - XXX - [Throttling](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
+    - XXX - [Time Delimited Access](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
+  - XXX - [Data Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
+    - XXX - [IP Address Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#ip-address-filtering)
+    - XXX - [URL Based Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#url-based-filtering)
+    - XXX - [Content Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
+    - XXX - [Protocol Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
+    - XXX - [Service/Application Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#serviceapplication-blocking)
 
-161 - Infrastructure Manipulation
-      XXX - Route Manipulation
-              XXX - BGP Tampering
-              XXX - BGP Route Leaks
-              142 - DNS Cache Poisoning
-      XXX - Route Disruption
-              XXX - Disabling Network Hardware
-              XXX - DNS Domain Removal
-              XXX - DNS Filtering
-              XXX - BGP Route Disruption
+- 161 - [Infrastructure Manipulation](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#infrastructure-manipulation-161)
+  - XXX - [Route Manipulation](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#route-manipulation)
+    - XXX - [BGP Tampering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-tampering)
+    - XXX - [BGP Route Leaks](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-leaks)
+    - 142 - [DNS Cache Poisoning](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-cache-poisoning-142)
+  - XXX - [Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#route-disruption)
+    - XXX - [Disabling Network Hardware](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#disabling-network-hardware)
+    - XXX - [DNS Domain Removal](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-domain-removal)
+    - XXX - [DNS Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
+    - XXX - [BGP Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
 
 # [Obstruction](http://capec.mitre.org/data/definitions/607.html) (601)
 
 Meta Attack Pattern
 
-## [Jamming[(http://capec.mitre.org/data/definitions/601.html) (601)
+## [Jamming](http://capec.mitre.org/data/definitions/601.html) (601)
 
 Attack Pattern
 
