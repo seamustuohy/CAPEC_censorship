@@ -31,7 +31,7 @@ This is a working space for me to build out, and get feedback on a possible addi
     - XXX - [DNS Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
     - XXX - [BGP Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
 
-### [CATEGORY: Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md)A (152)
+### CATEGORY: [Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md) (152)
 - XXX - [Traffic Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#traffic-injection)
   - XXX - [Connection Reset](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#connection-reset)
     - XXX - [TCP RST Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#tcp-rst-injection)
