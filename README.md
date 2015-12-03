@@ -10,6 +10,8 @@ This is a working space for me to build out, and get feedback on a possible addi
     - 604 - [WiFi Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#wi-fi-jamming-604)
     - 605 - [Cellular Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#cellular-jamming-605)
     - XXX - [Satellite Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#satellite-jamming)
+  - 603 - Blockage
+    - 571 - Block Logging to Central Repository
   - XXX - [Limiting](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
     - XXX - [Throttling](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
     - XXX - [Time Delimited Access](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
@@ -19,17 +21,20 @@ This is a working space for me to build out, and get feedback on a possible addi
     - XXX - [Content Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
     - XXX - [Protocol Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
     - XXX - [Service/Application Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#serviceapplication-blocking)
-
-- 161 - [Infrastructure Manipulation](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#infrastructure-manipulation-161)
-  - XXX - [Route Manipulation](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#route-manipulation)
-    - XXX - [BGP Tampering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-tampering)
-    - XXX - [BGP Route Leaks](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-leaks)
-    - 142 - [DNS Cache Poisoning](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-cache-poisoning-142)
   - XXX - [Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#route-disruption)
     - XXX - [Disabling Network Hardware](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#disabling-network-hardware)
     - XXX - [DNS Domain Removal](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-domain-removal)
     - XXX - [DNS Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
     - XXX - [BGP Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
+
+### CATEGORY: Deceptive Interactions (156)
+- 154 - Resource Location Spoofing
+  - 161 - Route Manipulation
+    - XXX - [BGP Tampering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-tampering)
+    - XXX - [BGP Route Leaks](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-leaks)
+148 - Content Spoofing
+       141 - Cache Poisoning
+              142 - [DNS Cache Poisoning](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-cache-poisoning-142)
 
 ### CATEGORY: [Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md) (152)
 - XXX - [Traffic Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#traffic-injection)
