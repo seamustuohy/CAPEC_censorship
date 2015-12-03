@@ -30,11 +30,11 @@ This is a working space for me to build out, and get feedback on a possible addi
 ### CATEGORY: Deceptive Interactions (156)
 - 154 - Resource Location Spoofing
   - 161 - Route Manipulation
-    - XXX - [BGP Tampering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-tampering)
-    - XXX - [BGP Route Leaks](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-leaks)
-148 - Content Spoofing
-       141 - Cache Poisoning
-              142 - [DNS Cache Poisoning](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-cache-poisoning-142)
+    - XXX - [BGP Tampering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/deceptive_interaction.md#bgp-tampering)
+    - XXX - [BGP Route Leaks](https://github.com/elationfoundation/CAPEC_censorship/blob/master/deceptive_interaction.md#bgp-route-leaks)
+- 148 - Content Spoofing
+  - 141 - Cache Poisoning
+    - 142 - [DNS Cache Poisoning](https://github.com/elationfoundation/CAPEC_censorship/blob/master/deceptive_interaction.md#dns-cache-poisoning-142)
 
 ### CATEGORY: [Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md) (152)
 - XXX - [Traffic Injection](https://github.com/elationfoundation/CAPEC_censorship/blob/master/injection.md#traffic-injection)
