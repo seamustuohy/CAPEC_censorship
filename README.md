@@ -10,22 +10,21 @@ This is a working space for me to build out, and get feedback on a possible addi
     - 604 - [WiFi Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#wi-fi-jamming-604)
     - 605 - [Cellular Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#cellular-jamming-605)
     - XXX - [Satellite Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#satellite-jamming)
-  - 603 - Blockage
-    - 571 - Block Logging to Central Repository
   - XXX - [Limiting](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
     - XXX - [Throttling](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
     - XXX - [Time Delimited Access](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
-  - XXX - [Data Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
-    - XXX - [IP Address Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#ip-address-filtering)
-    - XXX - [URL Based Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#url-based-filtering)
-    - XXX - [Content Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
-    - XXX - [Protocol Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
+  - 603 - Blockage
+    - 571 - Block Logging to Central Repository
+    - XXX - [IP Address Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#ip-address-blocking)
+    - XXX - [URL Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#url-blocking)
+    - XXX - [Content Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-blocking)
+    - XXX - [Protocol Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-blocking)
     - XXX - [Service/Application Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#serviceapplication-blocking)
-  - XXX - [Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#route-disruption)
+    - XXX - [DNS Blocking](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disabling)
+  - XXX - [Route Disabling](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#route-disabling)
     - XXX - [Disabling Network Hardware](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#disabling-network-hardware)
     - XXX - [DNS Domain Removal](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#dns-domain-removal)
-    - XXX - [DNS Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
-    - XXX - [BGP Route Disruption](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disruption)
+    - XXX - [BGP Route Disabling](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#bgp-route-disabling)
 
 ### CATEGORY: Deceptive Interactions (156)
 - 154 - Resource Location Spoofing
@@ -67,7 +66,7 @@ This element represents a container of one or more example instances. An example
 
 The censorship detection & measurement community, the CAPEC community, and censorship circumvention development community should be reached out to for feedback to ensure that anything developed can be included in CAPEC and is representative of the information sharing needs of the censorship circumvention and detection communities.
 
-* **TODO:** Incorporate feedback on hierarchy and included items
+* **DONE:** Incorporate feedback on hierarchy and included items
 * **TODO:** Get Examples/Instances for each item
 * **TODO:** Collect indicators from censorship detection community
 * **TODO:** Collect Design/security patterns from circumvention community

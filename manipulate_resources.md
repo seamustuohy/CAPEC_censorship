@@ -4,12 +4,11 @@
     - 604 - [WiFi Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#wi-fi-jamming-604)
     - 605 - [Cellular Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#cellular-jamming-605)
     - XXX - [Satellite Jamming](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#satellite-jamming)
-  - 603 - Blockage
-    - 571 - Block Logging to Central Repository
   - XXX - [Limiting](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
     - XXX - [Throttling](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#throttling)
     - XXX - [Time Delimited Access](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
-  - XXX - [Data Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#data-filtering)
+  - 603 - Blockage
+    - 571 - Block Logging to Central Repository
     - XXX - [IP Address Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#ip-address-filtering)
     - XXX - [URL Based Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#url-based-filtering)
     - XXX - [Content Filtering](https://github.com/elationfoundation/CAPEC_censorship/blob/master/manipulate_resources.md#protocol-filtering)
@@ -25,11 +24,19 @@
 
 Meta Attack Pattern
 
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
 ## [Jamming](http://capec.mitre.org/data/definitions/601.html) (601)
 
 Attack Pattern
 
 An adversary uses radio noise or signals in an attempt to disrupt communications.
+
 
 * References
   * [1] [jamming - Internet Security Glossary, Version 2](https://tools.ietf.org/html/rfc4949#page-170)
@@ -66,6 +73,15 @@ In this attack scenario, the attacker actively transmits signals to overpower an
 
 Detailed Attack Pattern
 
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
+
 * References
 * Resources Required
 * Methods of attack
@@ -76,6 +92,14 @@ Detailed Attack Pattern
 
 Attack Pattern
 
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
+
 * References
 * Resources Required
 * Methods of attack
@@ -84,6 +108,14 @@ Attack Pattern
 ### Throttling
 
 Detailed Attack Pattern
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
 
 * Mitigations
 
@@ -97,40 +129,39 @@ Detailed Attack Pattern
 
 Detailed Attack Pattern
 
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
+
 * References
 * Resources Required
 * Methods of attack
 * Mitigations
 
 
-## Data Filtering
+## [Blockage](https://capec.mitre.org/data/definitions/603.html) (603)
 
 Attack Pattern
 
-When a specific type of data is dropped by an in-path server. When requests are filtered the corresponding connections time out.
+An adversary blocks the delivery of an important system resource causing the system to fail or stop working.
 
-* Resources Required
-  * in-path router
 
-* Methods of attack
-  * Filter Request
-
-"The first opportunity for this arises during the TCP connection establishment phase.  However, since hostnames are not available in TCP SYN packets, the black- list for such filtering would consist of IP addresses, port and protocol combinations. The next opportunity for filtering requests arises when HTTP requests are made. The blacklist for such filtering can consist of a combination of domain, sub-domain, or hostnames and even regular expressions focusing on URLs and keywords. When requests are filtered, corresponding connections time out and the browser dis- plays an error stating this to the end user.  Likewise, since the request never reaches the destination web server, it can- not even infer that censorship is occurring." [1]
-
-  * Filter Response
-
-"As the dual to filtering the request, a censor may filter on response, either instead of filtering requests or in addition.  Response-based filtering can only be keyword based, however, as the host- name and page requested are not included in an HTTP response" [1]
-
-* Mitigations
-
-* References
-  * [1] [Inferring Mechanics of Web Censorship Around the World](https://www.usenix.org/system/files/conference/foci12/foci12-final1.pdf)
-
-### IP Address Filtering
+### IP Address Blocking
 
 Detailed Attack Pattern
 
 Dropping packets because of they are destined for a given IP address.
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
 
 * Resources Required
 
@@ -146,11 +177,19 @@ The use of an access control list (ACL)
   * [Censorship in the Wild: Analyzing Internet Filtering in Syria](http://conferences2.sigcomm.org/imc/2014/papers/p285.pdf)
 
 
-### URL Based Filtering
+### URL Blocking
 
 Detailed Attack Pattern
 
 Filtering based upon the requested domain, subdomain, or host.
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
 
 * References
 * Resources Required
@@ -171,9 +210,17 @@ Filtering based upon the use of particular strings included in the requested URL
 
     * Mitigations
 
-### Content Filtering
+### Content Blocking
 
 Detailed Attack Pattern
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
 
 * References
 * Resources Required
@@ -186,10 +233,16 @@ Detailed Attack Pattern
   * Implement trickle-syncing
   * Implement self-throttling to avoid detection of larger downloads
 
-### Protocol Filtering
+### Protocol Blocking
 
 Detailed Attack Pattern
 
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
 
 Filtering specific traffic because they are destined for a specific port and protocol combination.
 
@@ -211,6 +264,13 @@ Filtering specific traffic because they are destined for a specific port and pro
 
 Detailed Attack Pattern
 
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
 Filtering specific protocols.
 
 * References
@@ -225,42 +285,18 @@ Filtering specific protocols.
   * Implement Domain Fronting
   * Implement Pluggable Transport support
 
-
-
-## Route Disruption
-
-Attack Pattern
-
-### Disabling Network Hardware
-
-Detailed Attack Pattern
-
-"Disabling Internet access is an extreme form of Internet censor- ship in which a population’s Internet access is blocked completely, a coarse but technically more straightforward approach than the selective blocking used in most Internet censorship regimes. It can be implemented by simply powering down or physically disconnecting critical equipment, although this approach typically requires physical co-location with the communications equipment, which may be spread over a wide area"
-
-* References
-  * [1] [Analysis of Country-wide Internet Outages Caused by
-Censorship](http://www.caida.org/publications/papers/2011/outages_censorship/outages_censorship.pdf)
-
-* Resources Required
-* Methods of attack
-* Mitigations
-
-#### DNS Domain Removal
-
-Detailed Attack Pattern
-
-*Is this worth including? It requires the adversary to actually have the root name server remove the domain against a services will.*
-
-* References
-* Resources Required
-* Methods of attack
-* Mitigations
-
-#### DNS Filtering
+#### DNS Blocking
 
 Detailed Attack Pattern
 
 When DNS requests for a specific domain are dropped by an in-path server.
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
 
 *Is this common enough to include? I have only really heard of DNS blocking that uses redirection being used in the wild.*
 
@@ -277,11 +313,74 @@ When DNS requests for a specific domain are dropped by an in-path server.
 * Resources Required
 * Methods of attack
 
-### BGP Route Disruption
+
+## Route Disabling
+
+Attack Pattern
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
+
+### Disabling Network Hardware
+
+Detailed Attack Pattern
+
+"Disabling Internet access is an extreme form of Internet censor- ship in which a population’s Internet access is blocked completely, a coarse but technically more straightforward approach than the selective blocking used in most Internet censorship regimes. It can be implemented by simply powering down or physically disconnecting critical equipment, although this approach typically requires physical co-location with the communications equipment, which may be spread over a wide area"
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
+
+* References
+  * [1] [Analysis of Country-wide Internet Outages Caused by
+Censorship](http://www.caida.org/publications/papers/2011/outages_censorship/outages_censorship.pdf)
+
+* Resources Required
+* Methods of attack
+* Mitigations
+
+#### DNS Domain Removal
+
+Detailed Attack Pattern
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
+
+*Is this worth including? It requires the adversary to actually have the root name server remove the domain against a services will.*
+
+* References
+* Resources Required
+* Methods of attack
+* Mitigations
+
+
+### BGP Route Disabling
 
 Detailed Attack Pattern
 
 "Disabling the routing process on critical routers or suppressing BGP information transmission can effectively render large parts of a network unreachable." [2]
+
+An adversary...
+The goal of this attack is to... ||  The attacker is therefore able to...
+This is usually the result of...
+For example,...
+This attack differs from ... in that ....
+The techniques require...
+
 
 * References
   * [1] [Why Is It Taking So Long to Secure Internet Routing?](https://queue.acm.org/detail.cfm?id=2668966)
