@@ -70,6 +70,10 @@ The censorship detection & measurement community, the CAPEC community, and censo
 * **TODO:** Get Examples/Instances for each item
 * **TODO:** Collect indicators from censorship detection community
 * **TODO:** Collect Design/security patterns from circumvention community
+* **TODO:** Review existing content for possible text
+  - https://tools.ietf.org/html/draft-hall-censorship-tech-01
+  - https://www.ietf.org/id/draft-iab-filtering-considerations-09.txt
+  - https://www.rfc-editor.org/rfc/rfc4949.txt
 
 ### Secondary Content Creation Tasks
 

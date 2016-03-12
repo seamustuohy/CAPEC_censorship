@@ -14,12 +14,7 @@ Detailed Attack Pattern
 
 "BGP lacks mechanisms to authenticate the allocation of IP prefixes to autonomous systems; a prefix hijacker exploits this by originating a prefix that was not allocated to its AS." [1]
 
-An adversary...
-The goal of this attack is to... ||  The attacker is therefore able to...
-This is usually the result of...
-For example,...
-This attack differs from ... in that ....
-The techniques require...
+An adversary originates a BGP prefix that was not allocated to its ISP's AS (autonomous system). The goal of this attack is to have the traffic destined for a legitimate service be forwarded to the adversaries AS instead of to the legitimate AS. For example, Pakistan Telecom's AS 17557 originated the subprefix 208.65.153.0/24 of YouTube's prefix 208.65.153.0/22 to its customer ASes in Pakistan in response to Authoritiees demanding that YouTube be censored within Pakistan. The techniques require the adversary to have control of an ISP's AS with neighbors that it can make malicious BGP announcements to.
 
 
 * References
@@ -28,18 +23,14 @@ The techniques require...
   * [2] [Practical Defenses Against BGP Prefix Hijacking](http://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1365&context=ecetr)
 
 * Resources Required
-  * BGP Router
+  * AS (autonomous system)
 
 * Method of Attack
   * BGP Prefix Hijacking
 
-Detailed Attack Pattern
-
 "In a prefix hijack, the hijacking AS originates the exact same prefix as the AS(es) that is legitimately allocated the victim IP prefix. The bogus BGP announcement originated by the hijacking AS will be disseminated throughout the routing system, and the other ASes will use their local policies to choose between routes to the legitimate origin AS(es) and bogus routes originated by the hijacking AS." [1]
 
   * BGP Subprefix Hijacking
-
-Detailed Attack Pattern
 
 "In a subprefix hijack, the hijacking AS originates a subprefix of the victim’s IP prefix—that is, a prefix that is covered by the victim IP prefix."
 
@@ -49,36 +40,20 @@ Detailed Attack Pattern
 
 "... the perpetrator announces a legitimate route that it is actually using, but announces it to too many of its neighbors. The perpetrator is then overwhelmed by a flood of traffic from neighbors that select the leaked route." [1]
 
-An adversary...
-The goal of this attack is to... ||  The attacker is therefore able to...
-This is usually the result of...
-For example,...
-This attack differs from ... in that ....
-The techniques require...
-
-
+An adversary announces a legitimate route, but announces it to too many neighboring ASes. The adversary is then overwhelmed by a traffic from neighbors that select the leaked route. The goal of this attack is to capture legitimate traffic that would otherwise be routed through other ASes routed through the "leaking AS". This attack can be used to intentionally censor through targeted dropping/rejection of traffic or unintentionally blackholeing all traffic by overwhelming the network. The techniques require the adversary to have control of an ISP's AS with neighbors that it can make BGP announcements to.
 
 * Attack Motivation
 
 " Understanding why this had an impact requires knowledge of [an AS' neighbors] local routing policies. Many routers likely including those in a neighboring [AS], are configured to prefer a route through a neighboring customer over one through a neighboring settlement-free peer. By forwarding traffic through its customers, an AS can generate more revenue. As such, [an AS' neighbors] routers [may prefer] the customer route through [the leaked route] over the usual settlement-free peering route directly to [the destination]." [1]
 
-
 * References
   * [1] [Why Is It Taking So Long to Secure Internet Routing?](https://queue.acm.org/detail.cfm?id=2668966)
 
 * Resources Required
-  * BGP Router
+  * ISP's AS
 
 ### [DNS Cache Poisoning](http://capec.mitre.org/data/definitions/142.html) (142)
 
-An adversary...
-The goal of this attack is to... ||  The attacker is therefore able to...
-This is usually the result of...
-For example,...
-This attack differs from ... in that ....
-The techniques require...
-
-*Request to move and add minor additions to existing detailed attack pattern.*
 
 * Mitigations
 
@@ -91,20 +66,8 @@ The techniques require...
 
   * Below-Recursive DNS Poisoning
 
-When an otherwise legitimate recursive DNS server provides malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) DNS responses to requests made of it.
-
-When done through a legitimate recursive DNS server I would consider this redirection instead of injection. I would say this is "tampering" instead of "injection" in that they are utilizing their proper role as an in-path routing device to provide DNS responses. If they were an off-path device that was attempting to send a DNS response quicker than the normal DNS could be resolved I would say it is Injection.
-
-"DNS blocking that’s done by an ISP or enterprise in order to censor content or protect end users or to insert ads into the web experience occurs between the end user’s laptop or desktop or mobile device and whatever recursive DNS server that end user is depending on. Your recursive DNS server as you read this article was most likely assigned to you by DHCP along with your IP address unless you’ve taken explicit steps to override this setting and it’s possible for the operator of your network to prevent you from successfully overriding it – which they will do if your override is costing them revenue or if their government insists." [1]
-
-    * References
-      * [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
+An adversary provides malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) DNS responses to requests made of it. This technique requires the adversary to be an otherwise legitimate recursive DNS server.
 
   * Above-Recursive DNS Poisoning
 
-When an otherwise legitimate authority DNS server provides malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) responses to requests made of it.
-
-"DNS blocking that’s done by an authority server operator ... One could imagine a country that ... demands that all recursive name server operators in the country use a specific “alternate root” name server system whose design and configuration included various kinds of censorship and overrides." [1]
-
-    * References
-      * [1] [Blocking DNS](https://www.isc.org/blogs/blocking-dns/)
+An adversary provides malicious ("NXDOMAIN" ("No such domain") code, or DNS A record) DNS responses to requests made of it. This technique requires the adversary to be an otherwise legitimate authority DNS server.
